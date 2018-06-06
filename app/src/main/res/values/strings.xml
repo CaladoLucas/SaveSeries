@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Save Series</string>
+    <string name="nova_serie">Nova Série</string>
+    <string name="lista_serie">Lista de Série</string>
+</resources>
