@@ -7,19 +7,19 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btListaDeSerie"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/lista_serie"
-        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintBottom_toBottomOf="@+id/btNovaSerie"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button" />
+        app:layout_constraintStart_toEndOf="@+id/btNovaSerie"
+        app:layout_constraintTop_toTopOf="@+id/btNovaSerie" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btNovaSerie"
         android:layout_width="133dp"
         android:layout_height="57dp"
         android:layout_marginBottom="205dp"
@@ -29,7 +29,7 @@
         android:layout_marginStart="16dp"
         android:text="@string/nova_serie"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/btListaDeSerie"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -43,7 +43,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="37dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btNovaSerie"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

@@ -3,10 +3,10 @@ package com.example.lucas_pc.saveseries
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 
-class MenuActivity : AppCompatActivity() {
+class PrincipalActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu)
+        setContentView(R.layout.activity_principal)
     }
 }
