@@ -1,9 +1,10 @@
-package com.example.lucas_pc.saveseries
+package com.example.lucas_pc.saveseries.activitys
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.lucas_pc.saveseries.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,17 +12,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var btNovaSerie = findViewById<Button>(R.id.btNovaSerie)
+        val btNovaSerie = findViewById<Button>(R.id.btNovaSerie)
 
-        var btListaDeSerie = findViewById<Button>(R.id.btListaDeSerie)
-
+        val btListaDeSerie = findViewById<Button>(R.id.btListaDeSerie)
 
         btNovaSerie.setOnClickListener{
 
         }
 
         btListaDeSerie.setOnClickListener {
-            var intent = Intent(this, PrincipalActivity::class.java)
+            val intent = Intent(this, PrincipalActivity::class.java)
             startActivity(intent)
         }
 
