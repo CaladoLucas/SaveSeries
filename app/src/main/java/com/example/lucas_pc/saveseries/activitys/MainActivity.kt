@@ -17,12 +17,11 @@ class MainActivity : AppCompatActivity() {
         val btListaDeSerie = findViewById<Button>(R.id.btListaDeSerie)
 
         btNovaSerie.setOnClickListener{
-
+            startActivity(Intent(this, NewSerieActivity::class.java))
         }
 
         btListaDeSerie.setOnClickListener {
-            val intent = Intent(this, PrincipalActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, PrincipalActivity::class.java))
         }
 
     }
