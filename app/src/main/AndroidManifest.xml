@@ -16,8 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activitys.PrincipalActivity" />
-        <activity android:name=".activitys.NewSerieActivity"></activity>
+        <activity android:name=".activitys.PrincipalActivity"
+            android:label="@string/tela_principal"/>
+        <activity android:name=".activitys.NewSerieActivity"/>
     </application>
 
 </manifest>

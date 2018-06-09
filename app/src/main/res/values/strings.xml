@@ -8,4 +8,6 @@
     <string name="name">Nome</string>
     <string name="insert">inserir</string>
     <string name="descripton">Descrição</string>
+
+    <string name="tela_principal">Tela Principal</string>
 </resources>
