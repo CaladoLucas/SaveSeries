@@ -8,6 +8,7 @@ import android.widget.ListView
 import com.example.lucas_pc.saveseries.R
 import com.example.lucas_pc.saveseries.fragments.ItemFragment
 import com.example.lucas_pc.saveseries.models.Serie
+import com.example.lucas_pc.saveseries.util.ListaDeSeries
 import kotlinx.android.synthetic.main.fragment_item.*
 
 class PrincipalActivity : AppCompatActivity() {
@@ -16,13 +17,16 @@ class PrincipalActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_principal)
 
-        var list : ArrayList<Serie> = intent.extras.getSerializable("lista") as ArrayList<Serie>
-        //var list: ArrayList<Serie> = arrayListOf()
-        list.add(Serie("lala", "tutu"))
+        //var list : ArrayList<Serie> = intent.extras.getSerializable("lista") as ArrayList<Serie>
+       // var list: ArrayList<Serie> = arrayListOf()
+
+        //var list = ListaDeSeries.LISTA
+
+        //list.add(Serie("lala", "tutu"))
 
         supportFragmentManager
                 .beginTransaction()
-                .add(R.id.conteiner, ItemFragment.newInstance(list), "ItemFragment")
+                .add(R.id.conteiner, ItemFragment.newInstance(ListaDeSeries.LISTA), "ItemFragment")
                 .commit()
 
     }

@@ -10,7 +10,7 @@ import android.widget.Toast
 import com.example.lucas_pc.saveseries.R
 
 
-import com.example.lucas_pc.saveseries.fragments.ItemFragment.OnListFragmentInteractionListener
+//import com.example.lucas_pc.saveseries.fragments.ItemFragment.OnListFragmentInteractionListener
 import com.example.lucas_pc.saveseries.fragments.dummy.DummyContent.DummyItem
 import com.example.lucas_pc.saveseries.models.Serie
 
@@ -22,8 +22,8 @@ import kotlinx.android.synthetic.main.fragment_item.view.*
  * TODO: Replace the implementation with code for your data type.
  */
 class MyItemRecyclerViewAdapter(
-        private val mValues: List<Serie>,
-        private val mListener: OnListFragmentInteractionListener?)
+        private val mValues: List<Serie>
+        /*private val mListener: OnListFragmentInteractionListener?*/)
     : RecyclerView.Adapter<MyItemRecyclerViewAdapter.ViewHolder>() {
 
     private val mOnClickListener: View.OnClickListener

@@ -1,6 +1,5 @@
 package com.example.lucas_pc.saveseries.fragments
 
-import android.content.Context
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.GridLayoutManager
@@ -11,8 +10,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.lucas_pc.saveseries.R
 
-import com.example.lucas_pc.saveseries.fragments.dummy.DummyContent
-import com.example.lucas_pc.saveseries.fragments.dummy.DummyContent.DummyItem
 import com.example.lucas_pc.saveseries.models.Serie
 
 /**
@@ -27,7 +24,7 @@ class ItemFragment : Fragment() {
 
     private var lista: ArrayList<Serie> = arrayListOf()
 
-    private var listener: OnListFragmentInteractionListener? = null
+    //private var listener: OnListFragmentInteractionListener? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,7 +45,7 @@ class ItemFragment : Fragment() {
                     columnCount <= 1 -> LinearLayoutManager(context)
                     else -> GridLayoutManager(context, columnCount)
                 }
-                adapter = MyItemRecyclerViewAdapter(lista, listener)
+                adapter = MyItemRecyclerViewAdapter(lista/*, listener*/)
             }
         }
         return view
@@ -79,10 +76,10 @@ class ItemFragment : Fragment() {
      * [Communicating with Other Fragments](http://developer.android.com/training/basics/fragments/communicating.html)
      * for more information.
      */
-    interface OnListFragmentInteractionListener {
+    /*interface OnListFragmentInteractionListener {
         // TODO: Update argument type and name
         fun onListFragmentInteraction(item: DummyItem?)
-    }
+    }*/
 
     companion object {
 

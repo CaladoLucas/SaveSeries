@@ -5,11 +5,10 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.example.lucas_pc.saveseries.R
 import com.example.lucas_pc.saveseries.models.Serie
+import com.example.lucas_pc.saveseries.util.ListaDeSeries
 import kotlinx.android.synthetic.main.activity_new_serie.*
-import java.io.Serializable
 
 class NewSerieActivity : AppCompatActivity() {
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,10 +17,7 @@ class NewSerieActivity : AppCompatActivity() {
         btInserir.setOnClickListener {
             if (edtName.text != null && edtDescricao.text != null) {
 
-                //series[edtName.text.toString()] = edtDescricao.text.toString()
-                val list : ArrayList<Serie> = arrayListOf()
-
-                list.add(Serie(edtName.text.toString(), edtDescricao.text.toString()))
+                val list = ListaDeSeries.LISTA.add(Serie(edtName.text.toString(), edtDescricao.text.toString()))
 
                 val intent = Intent(this, PrincipalActivity::class.java)
                 intent.putExtra("lista", list)
