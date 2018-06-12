@@ -13,6 +13,7 @@ import com.example.lucas_pc.saveseries.R
 //import com.example.lucas_pc.saveseries.fragments.ItemFragment.OnListFragmentInteractionListener
 import com.example.lucas_pc.saveseries.fragments.dummy.DummyContent.DummyItem
 import com.example.lucas_pc.saveseries.models.Serie
+import com.example.lucas_pc.saveseries.util.ListaDeSeries
 
 import kotlinx.android.synthetic.main.fragment_item.view.*
 
@@ -32,6 +33,7 @@ class MyItemRecyclerViewAdapter(
         mOnClickListener = View.OnClickListener { v ->
 
             //metodo de click da view
+
 
             Toast.makeText(v.context, "tt", Toast.LENGTH_SHORT).show()
         }
