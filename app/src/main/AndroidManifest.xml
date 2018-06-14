@@ -16,9 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activitys.PrincipalActivity"
-            android:label="@string/tela_principal"/>
-        <activity android:name=".activitys.NewSerieActivity"/>
+        <activity
+            android:name=".activitys.PrincipalActivity"
+            android:label="@string/tela_principal" />
+        <activity android:name=".activitys.NewSerieActivity" />
+        <activity android:name=".activitys.DetailActivity"></activity>
     </application>
 
 </manifest>

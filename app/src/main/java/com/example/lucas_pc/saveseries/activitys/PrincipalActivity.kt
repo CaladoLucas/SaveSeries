@@ -19,6 +19,7 @@ class PrincipalActivity : AppCompatActivity() {
                 .add(R.id.conteiner, ItemFragment.newInstance(ListaDeSeries.LISTA), "ItemFragment")
                 .commit()
 
+
         floatingActionButton_nova_serie.setOnClickListener {
             startActivityForResult(Intent(this, NewSerieActivity::class.java), 2)
         }
