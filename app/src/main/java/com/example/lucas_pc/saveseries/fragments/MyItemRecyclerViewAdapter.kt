@@ -1,6 +1,8 @@
 package com.example.lucas_pc.saveseries.fragments
 
 import android.content.Context
+import android.content.Intent
+import android.support.v4.content.ContextCompat.startActivity
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +10,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import com.example.lucas_pc.saveseries.R
+import com.example.lucas_pc.saveseries.activitys.DetailActivity
+import com.example.lucas_pc.saveseries.activitys.NewSerieActivity
+import com.example.lucas_pc.saveseries.activitys.PrincipalActivity
 
 
 //import com.example.lucas_pc.saveseries.fragments.ItemFragment.OnListFragmentInteractionListener
@@ -32,7 +37,10 @@ class MyItemRecyclerViewAdapter(
     init {
         mOnClickListener = View.OnClickListener { v ->
 
-            //metodo de click da view
+
+
+
+
 
 
             Toast.makeText(v.context, "tt", Toast.LENGTH_SHORT).show()
@@ -49,6 +57,16 @@ class MyItemRecyclerViewAdapter(
         val item = mValues[position]
         holder.item_nome.text = item.nome
         //holder.mContentView.text = item.content
+
+        holder.item_nome.setOnClickListener{
+            var intent = Intent(it.context,DetailActivity::class.java)
+            intent.putExtra("item_nome", item.nome.get(position))
+            intent.putExtra("item_descricao", item.descricao.get(position))
+
+            it.context.startActivity(intent)
+        }
+
+
 
         with(holder.mView) {
             tag = item

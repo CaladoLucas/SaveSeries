@@ -1,10 +1,12 @@
 package com.example.lucas_pc.saveseries.activitys
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.example.lucas_pc.saveseries.R
 import com.example.lucas_pc.saveseries.fragments.ItemFragment
 import com.example.lucas_pc.saveseries.util.ListaDeSeries
+import kotlinx.android.synthetic.main.activity_principal.*
 
 class PrincipalActivity : AppCompatActivity() {
 
@@ -16,6 +18,10 @@ class PrincipalActivity : AppCompatActivity() {
                 .beginTransaction()
                 .add(R.id.conteiner, ItemFragment.newInstance(ListaDeSeries.LISTA), "ItemFragment")
                 .commit()
+
+        btnNovo.setOnClickListener{
+            startActivity(Intent(this,NewSerieActivity::class.java))
+        }
 
     }
 }
