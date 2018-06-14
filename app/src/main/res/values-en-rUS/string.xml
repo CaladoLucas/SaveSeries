@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nova_serie">New series</string>
+    <string name="lista_serie">Series List</string>
+
+    <string name="name">Name</string>
+    <string name="insert">Insert</string>
+    <string name="descripton">description</string>
+
+    <string name="tela_principal">Main screen</string>
+    <string name="cadastro">Contact Us</string>
+    <string name="detalhamento">Detailing</string>
+</resources>

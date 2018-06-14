@@ -20,7 +20,7 @@
             android:name=".activitys.PrincipalActivity"
             android:label="@string/tela_principal" />
         <activity android:name=".activitys.NewSerieActivity" />
-        <activity android:name=".activitys.DetailActivity"></activity>
+        <activity android:name=".activitys.DetailActivity"/>
     </application>
 
 </manifest>

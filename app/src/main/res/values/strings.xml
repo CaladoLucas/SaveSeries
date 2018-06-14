@@ -3,11 +3,11 @@
     <string name="nova_serie">Nova Série</string>
     <string name="lista_serie">Lista de Série</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="name">Nome</string>
     <string name="insert">inserir</string>
     <string name="descripton">Descrição</string>
 
     <string name="tela_principal">Tela Principal</string>
+    <string name="cadastro">Cadastro de Series</string>
+    <string name="detalhamento">Detalhamento</string>
 </resources>
