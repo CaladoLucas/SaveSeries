@@ -65,6 +65,7 @@ class MyItemRecyclerViewAdapter(
 //        }
         holder.cardView.setOnClickListener{
             var intent = Intent(it.context,DetailActivity::class.java)
+            intent.putExtra("item", item.toString())
             intent.putExtra("item_nome", item.nome)
             intent.putExtra("item_descricao", item.descricao)
 

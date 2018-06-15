@@ -6,6 +6,8 @@
     <string name="name">Name</string>
     <string name="insert">Insert</string>
     <string name="descripton">description</string>
+    <string name="back">voltar</string>
+    <string name="delete">Excluir</string>
 
     <string name="tela_principal">Main screen</string>
     <string name="cadastro">Contact Us</string>

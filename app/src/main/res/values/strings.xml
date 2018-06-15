@@ -5,6 +5,8 @@
 
     <string name="name">Nome</string>
     <string name="insert">inserir</string>
+    <string name="back">voltar</string>
+    <string name="delete">Excluir</string>
     <string name="descripton">Descrição</string>
 
     <string name="tela_principal">Tela Principal</string>
