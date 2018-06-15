@@ -9,22 +9,16 @@ import kotlinx.android.synthetic.main.activity_detail.*
 
 class DetailActivity : AppCompatActivity() {
 
-
+var posicao: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
         getIncomingIntent()
 
-
-
-        btnVoltar.setOnClickListener{
-            startActivity(Intent(this,PrincipalActivity::class.java))
-        }
-
         btnExcluir.setOnClickListener{
-            excluiItem(txtPosicao)
-            startActivity(Intent(this,PrincipalActivity::class.java))
+            excluiItem(posicao)
+            finish()
         }
     }
 
@@ -32,20 +26,22 @@ class DetailActivity : AppCompatActivity() {
 
         if(intent.hasExtra("item_nome") && intent.hasExtra("item_descricao")){
 
-            val item = intent.getStringExtra("item").toString()
+            val posicao = intent.getIntExtra("posicao",0)
             val nomeItem = intent.getStringExtra("item_nome")
             val nomeDescricao= intent.getStringExtra("item_descricao")
-            setItem(nomeItem,nomeDescricao,item)
+            setItem(nomeItem,nomeDescricao,posicao)
         }
     }
-    fun excluiItem(position: Any){
-        ListaDeSeries.LISTA.remove(position)
+    fun excluiItem(position: Int){
+
+        ListaDeSeries.LISTA.removeAt(position)
     }
 
-    fun setItem(nomeItem: String,nomeDescricao: String,item: String){
+    fun setItem(nomeItem: String,nomeDescricao: String,posicao: Int){
         textName.text = nomeItem
         textDescricao.text = nomeDescricao
-        txtPosicao.text = item
+        this.posicao = posicao
+        txtPosicao.text =  getString(R.string.posicao_do_item).plus(" ").plus(posicao)
     }
 
 }

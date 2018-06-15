@@ -13,4 +13,8 @@
     <string name="cadastro">Cadastro de Series</string>
     <string name="detalhamento">Detalhamento</string>
     <string name="descricao_geral">Este aplicativo tem como objetivo simular o cadastro e a listagem de um séries.</string>
+
+    <string name="posicao_do_item">Item da posição </string>
+    <string name="titulo">Titulo</string>
+    <string name="descricao">Descrição</string>
 </resources>

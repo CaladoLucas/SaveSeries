@@ -11,12 +11,9 @@ import android.view.ViewGroup
 import com.example.lucas_pc.saveseries.R
 
 import com.example.lucas_pc.saveseries.models.Serie
+import com.example.lucas_pc.saveseries.util.ListaDeSeries
+import kotlinx.android.synthetic.main.fragment_item_list.*
 
-/**
- * A fragment representing a list of Items.
- * Activities containing this fragment MUST implement the
- * [ItemFragment.OnListFragmentInteractionListener] interface.
- */
 class ItemFragment : Fragment() {
 
     // TODO: Customize parameters
@@ -49,6 +46,13 @@ class ItemFragment : Fragment() {
             }
         }
         return view
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        list.adapter = MyItemRecyclerViewAdapter(ListaDeSeries.LISTA)
+
     }
 
     /*override fun onAttach(context: Context) {
