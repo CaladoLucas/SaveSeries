@@ -10,4 +10,5 @@
     <string name="tela_principal">Tela Principal</string>
     <string name="cadastro">Cadastro de Series</string>
     <string name="detalhamento">Detalhamento</string>
+    <string name="descricao_geral">Este aplicativo tem como objetivo simular o cadastro e a listagem de um séries.</string>
 </resources>

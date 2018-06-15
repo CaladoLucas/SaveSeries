@@ -10,4 +10,6 @@
     <string name="tela_principal">Main screen</string>
     <string name="cadastro">Contact Us</string>
     <string name="detalhamento">Detailing</string>
+
+    <string name="descricao_geral">This application is intended to simulate the registration and listing of a series.</string>
 </resources>
